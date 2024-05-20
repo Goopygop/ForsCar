@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <title>ForsCar</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #ffffff;
+                color: #333;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 1em;
+            }
+            h1{
+                text-align: center;
+                color: #000000;
+                font-size: 2.5em;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+            .car{
+                margin: 1em;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                background: #ffffff;
+                padding: 1em;
+                width: calc(33% - 2em);
+                border: 1px solid #b1b1b1;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+            .description {
+                font-size: 0.9em;
+                color: #666;
+                margin-top: 0.5em;
+            }
+
+            .car img:hover{
+                transform: scale(1.05);
+                transition: transform 0.2s;
+            }
+            @media (max-width: 768px) {
+                .car {
+                    width: calc(50% - 2em);
+                }
+            }
+
+            @media (max-width: 480px) {
+                .car {
+                    width: calc(100% - 2em);
+                }
+            }
+        </style>
+     </head>
+     <body>
+             <h1>Добро пожаловать в ForsCar</h1>  
+
+             <div class="gallery">
+                <!--Авто 1-->
+                <div class="car">
+                    <img src="https://sportishka.com/uploads/posts/2023-12/1701721492_sportishka-com-p-byudzhetnie-sportivnie-avtomobili-vkontakt-53.jpg" alt="Car1">
+                    <div class="description">Модель 1- современный двигатель и спорт прошивкой</div>
+                </div>
+             </div>   
+             
+             <div class="gallery">
+                <!--Авто 2-->
+                <div class="car">
+                    <img src="https://www.fonstola.ru/images/201903/fonstola.ru_323335.jpg" alt="Car2">
+                    <div class="description">Модель 2- роскошный седан с высококачественныь интерьером</div>
+                </div>
+             </div> 
+
+             <div class="gallery">
+                <!--Авто 3-->
+                <div class="car">
+                    <img src="https://sportishka.com/uploads/posts/2022-11/1667587801_55-sportishka-com-p-samaya-dorogaya-sportivnaya-mashina-krasiv-65.jpg" alt="Car3">
+                    <div class="description">Модель 3- элитный спорткар с огромным и мощным двигателем</div>
+                </div>
+             </div> 
+
+        <script>
+          
+        </script>
+     </body>
+</html>
